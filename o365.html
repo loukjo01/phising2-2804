@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Image Map O365</title>
+
+</head>
+<body>
+    <img src="/images/office365-imagemap.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="Afsender" title="Afsender" href="#" coords="492,43,26,94" shape="rect" onclick="showModal('Dette er afsenderområdet.')">
+        <area target="" alt="Link" title="Link" href="#" coords="83,297,517,409" shape="rect" onclick="showModal('Dette er linkområdet.')">
+        <area target="" alt="Logo" title="Logo" href="#" coords="181,149,423,231" shape="rect" onclick="showModal('Dette er logoområdet.')">
+        
+    </map>
+
+    <!-- Modal -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button onclick="closeModal()">Luk</button>
+        </div>
+    </div>
+
+</body>
+</html>
